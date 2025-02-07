@@ -1,0 +1,224 @@
+/* Kleuren en thema */
+:root {
+    --main-background: #000;
+    --main-text: #fff;
+    --button-background: #f4d35e;
+    --button-hover: #a6824d;
+    --section-background: #111;
+    --section-text: #ccc;
+}
+
+/* Algemene body styling */
+body {
+    background-color: var(--main-background);
+    color: var(--main-text);
+    font-family: 'Arial', sans-serif;
+    margin: 3em 0 0 0;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+/* Achtergrond per pagina */
+body.home-page {
+    background-image: url("afbeeldingen/pic10.png");
+}
+
+body.services-page {
+    background-image: url('afbeeldingen/pic13.png');
+}
+
+/* Header-sectie */
+.header-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.header-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+/* Knoppen */
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--main-background);
+    background-color: var(--button-background);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+    color: var(--main-text);
+}
+
+/* Algemene secties */
+.section {
+    margin: 0;
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: var(--section-background);
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: var(--button-background);
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: var(--section-text);
+}
+
+/* Navigatiemenu */
+nav {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul.menu li {
+    position: relative;
+    padding: 10px;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+ul.menu li:hover {
+    background-color: var(--button-hover);
+}
+
+ul.menu li a {
+    color: var(--main-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px;
+}
+
+/* Dropdown-menu */
+ul.menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+ul.menu li:hover > ul {
+    display: block;
+}
+
+ul.menu li ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+ul.menu li ul li:hover {
+    background-color: var(--section-background);
+}
+
+/* Footer */
+footer {
+    margin-top: 3em;
+    padding: 2rem 1rem;
+    background-color: var(--main-background);
+    color: var(--main-text);
+    text-align: center;
+}
+
+/* Responsieve aanpassingen */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    ul.menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul.menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    ul.menu li ul {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+}
