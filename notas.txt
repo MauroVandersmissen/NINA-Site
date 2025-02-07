@@ -1,0 +1,37 @@
+risico analyse volgens de belgische normen
+egon doet herstellingen  en ook plaatsingen als onderaannemer 
+ook onderhoud en herstel
+voor scholen ook
+3 grote onderdelen : 
+speeltoestellen beheer (3 knoppen)
+
+
+de eerste pagina (pagina 1) moet op vlak van html, de tekst bevatten "Spelen is voor kinderen niet alleen plezier, het is ook de manier waarop ze zich ontwikkelen. Ze ontdekken nieuwe werelden, zoeken avontuur en testen tegenlijkertijd hun grenzen. Om kinderen deze ontdekkingsreis zorgeloos te laten maken, is het essentieel dat ze kunnen spelen in een veilige omgeving.
+
+Bij SPEELZeker zetten  we ons daarom in voor veilig spelen. met onze expertise zorgen we voor vakkundig onderhoud, reparaties en gedetailleerde risico-analyses van speeltoestellen en speelplekken. Dit doen we onder andere voor gemeenten, scholen, kinderdagverblijven, dierentuinen, campings en recreatieparken.
+
+Met ons breed dienstenaanbod helpen we niet alleen de veiligheid van speelplekken te waarborgen, maar verlengen we ook de levensduur van speeltoestellen, zo kunnen kinderen zonder zorgen spelen en zich volop ontwikkelen!"
+
+zet een knop 								"SPEELZeker" zoals ik ze hier heb geplaatst in het centrum onder deze eerdere tekst, deze knop moet een witte achtergrond hebben met een elegante zwarte tekst vorm. als je op deze knop zou drukken moet het naar een nieuwe pagina leiden. (pagina 2.1)
+
+op deze pagina zal er dan bovenaan gecentreerd de volgende knoppen moeten komen "Speeltoestellenbeheer (Playcare), Advies op maat, en Risico-analyses" moeten komen te staan. elk van deze knoppen zou dan ook moeten uiteenvouwen eenmaal je er op drukt drukt en terug moeten invouwen moest je ergens anders op klikken. de knop "Speeltoestellenbeheer(Playcare)" moet deze sub knop bevatten "Van kleine reparaties tot groot onderhoud of nieuwe instalaties" en deze moet naar de volgende pagina leiden op de zelfde pagina, de knop "Advies op maat" moet een  subknop bevatten met de naam "Kleine stappen leiden naar grote doelen" deze moet dan naar pagina 2.3 leiden gezien dat de knop "Van kleine reparaties tot groot onderhoud of nieuwe instalaties" naar  pagina 2.2 leid. de knop "Risico-analyses" moet een sub knop bevatten met de naam "SPEELZeker, speel veilig" deze moet dan naar pagina 2.4 leiden. elke pagina moet ook helemaal beneden een actieve "contact" knop bevatten die de gegevens moet bevatten zoals mail-adres , telefoon nummer en mogelijks adres. (de contact gegevens moeten nog bepaald worden) pagina 1 en pagina 2.4
+
+pagina 1 moet een lumineuse achtergrond bevatten op vlak van css, dit zodat dit niet te gevoelig is voor de ogen, focus je op de kleuren donker zeeblauw, donker goud, licht bruin, en appelblauwzeegroen.  
+
+
+
+
+nota's:
+mogelijks een persoonlijk eigen verhaal geven zodat mensen (ouders en andere zich meer kunnen vinden erin)
+
+
+
+
+
+
+
+plaats de titel "SPEELZeker" iets hoger, en zet "contact" iets meer naar links, want nu kun je enkel dit lezen bij contact "conta". zorg ook dat de volgende tekst onder de titel "SPEELZeker" komt te staan , dit is de tekst : "Spelen is voor kinderen niet alleen plezier, het is ook de manier waarop ze zich ontwikkelen. Ze ontdekken nieuwe werelden, zoeken avontuur en testen tegenlijkertijd hun grenzen. Om kinderen deze ontdekkingsreis zorgeloos te laten maken, is het essentieel dat ze kunnen spelen in een veilige omgeving.
+
+Bij SPEELZeker zetten  we ons daarom in voor veilig spelen. met onze expertise zorgen we voor vakkundig onderhoud, reparaties en gedetailleerde risico-analyses van speeltoestellen en speelplekken. Dit doen we onder andere voor gemeenten, scholen, kinderdagverblijven, dierentuinen, campings en recreatieparken.
+
+Met ons breed dienstenaanbod helpen we niet alleen de veiligheid van speelplekken te waarborgen, maar verlengen we ook de levensduur van speeltoestellen, zo kunnen kinderen zonder zorgen spelen en zich volop ontwikkelen!" pas de code ook aan dat dit op elke browser  kan geopend worden en dat het zich automatisch aanpast naar de browser die gebruikt wordt, houdt hier dan ook rekening mee dat het moet kunnen geopend worden op smart-phones en ook daar goed kan bekeken worden.

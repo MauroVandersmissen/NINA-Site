@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEELZeker</title>
+    <!-- Verwijzing naar het CSS-bestand -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pagina 1 -->
+    <div id="page1" class="lumineuse">
+        <h1>SPEELZeker</h1>
+        <p>Spelen is voor kinderen niet alleen plezier, het is ook de manier waarop ze zich ontwikkelen. Ze ontdekken nieuwe werelden, zoeken avontuur en testen tegelijk hun grenzen. Om kinderen deze ontdekkingsreis zorgeloos te laten maken, is het essentieel dat ze kunnen spelen in een veilige omgeving.</p>
+        <p>Bij SPEELZeker zetten we ons daarom in voor veilig spelen. Met onze expertise zorgen we voor vakkundig onderhoud, reparaties en gedetailleerde risico-analyses van speeltoestellen en speelplekken. Dit doen we onder andere voor gemeenten, scholen, kinderdagverblijven, dierentuinen, campings en recreatieparken.</p>
+        <p>Met ons brede dienstenaanbod helpen we niet alleen de veiligheid van speelplekken te waarborgen, maar verlengen we ook de levensduur van speeltoestellen. Zo kunnen kinderen zonder zorgen spelen en zich volop ontwikkelen!</p>
+        <button class="button" onclick="goToPage2()">SPEELZeker</button>
+    </div>
+
+    <!-- Pagina 2 -->
+    <div id="page2" style="display: none;">
+        <div class="navbar">
+            <button onclick="toggleSubMenu('playcare')">Speeltoestellenbeheer (Playcare)</button>
+            <button onclick="toggleSubMenu('advice')">Advies op maat</button>
+            <button onclick="toggleSubMenu('risk')">Risico-analyses</button>
+        </div>
+
+        <div id="playcare" class="submenu">
+            <button onclick="goToPage('page2-2')">Van kleine reparaties tot groot onderhoud of nieuwe installaties</button>
+        </div>
+        <div id="advice" class="submenu">
+            <button onclick="goToPage('page2-3')">Kleine stappen leiden naar grote doelen</button>
+        </div>
+        <div id="risk" class="submenu">
+            <button onclick="goToPage('page2-4')">SPEELZeker, speel veilig</button>
+        </div>
+
+        <footer>
+            <p>Contactgegevens: Email - Telefoonnummer - Adres (nog te bepalen)</p>
+        </footer>
+    </div>
+
+    <!-- Verwijzing naar het JavaScript-bestand -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+/* script.js */
+// Functie om van pagina 1 naar pagina 2 te gaan
+function goToPage2() {
+    document.getElementById('page1').style.display = 'none'; // Verberg pagina 1
+    document.getElementById('page2').style.display = 'block'; // Toon pagina 2
+}
+
+// Functie om submenu's in te klappen of uit te klappen
+function toggleSubMenu(menuId) {
+    const submenus = document.querySelectorAll('.submenu');
+    submenus.forEach(submenu => {
+        if (submenu.id === menuId) {
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block'; // Wisselt tussen tonen en verbergen
+        } else {
+            submenu.style.display = 'none'; // Verbergt andere submenu's
+        }
+    });
+}
+
+// Functie om naar een specifieke pagina te navigeren
+function goToPage(page) {
+    alert(`Navigating to ${page}`); // Plaatshouder voor navigatie naar specifieke pagina
+}

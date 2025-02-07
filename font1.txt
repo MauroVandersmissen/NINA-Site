@@ -1,0 +1,66 @@
+
+
+
+@font-face {
+        font-family: 'GillSans'; 
+        src: url(https://www.moooi.com/_next/static/media/d525ead9d15d3121-s.p.woff2);
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+@font-face {
+        font-family: 'Poppins-Klaviyo-Hosted'; 
+        src: url(https://static.klaviyo.com/onsite/hosted-fonts/Poppins/latin/poppins_latin_italic_400.woff2);
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+@font-face {
+        font-family: 'Poppins-Klaviyo-Hosted'; 
+        src: url(https://static.klaviyo.com/onsite/hosted-fonts/Poppins/latin/poppins_latin_italic_700.woff2);
+        font-weight: 700;
+        font-style: italic;
+        font-display: swap;
+      }
+@font-face {
+        font-family: 'Poppins-Klaviyo-Hosted'; 
+        src: url(https://static.klaviyo.com/onsite/hosted-fonts/Poppins/latin/poppins_latin_regular_400_2.woff2);
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+@font-face {
+        font-family: 'Poppins-Klaviyo-Hosted'; 
+        src: url(https://static.klaviyo.com/onsite/hosted-fonts/Poppins/latin/poppins_latin_regular_700.woff2);
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+@font-face {
+        font-family: 'SangBleuCORRECT'; 
+        src: url(https://www.moooi.com/_next/static/media/2f795e3dc4f7d5d7-s.p.woff2);
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+@font-face {
+        font-family: 'SangBleuCORRECT'; 
+        src: url(https://www.moooi.com/_next/static/media/37baf8b6fc811eb1-s.p.woff2);
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+@font-face {
+        font-family: 'SangBleuCORRECT'; 
+        src: url(https://www.moooi.com/_next/static/media/40f582e5ab579a08-s.p.woff2);
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+@font-face {
+        font-family: 'SangBleuCORRECT'; 
+        src: url(https://www.moooi.com/_next/static/media/9f0b974069359fc3-s.p.woff2);
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }

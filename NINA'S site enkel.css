@@ -1,0 +1,93 @@
+/* styles.css */
+
+/* Algemene stijlen */
+body {
+    margin: 0; /* Verwijdert standaardmarge van de browser */
+    font-family: Arial, sans-serif; /* Bepaalt lettertype */
+    background-color: rgb(227, 217, 198); /* Zachte beige kleur als achtergrondkleur */
+}
+
+.lumineuse {
+    background: linear-gradient(to bottom right, #013a63, #f4d35e, #a6824d, #82cdb9); /* Gegradueerde achtergrondkleur */
+    color: #fff; /* Witte tekstkleur */
+    text-align: center; /* Centreert tekst */
+    padding: 2rem; /* Voeg ruimte toe rondom de inhoud */
+}
+
+h1, p {
+    margin: 1rem 0; /* Voeg marges boven en onder toe */
+}
+
+.button {
+    display: inline-block; /* Zorgt ervoor dat de knop inline blijft */
+    margin-top: 2rem; /* Ruimte boven de knop */
+    padding: 1rem 2rem; /* Binnenruimte van de knop */
+    font-size: 1.2rem; /* Lettergrootte van de knop */
+    color: #000; /* Zwarte tekstkleur */
+    background-color: #fff; /* Witte achtergrondkleur */
+    border: none; /* Geen rand */
+    border-radius: 8px; /* Afgeronde hoeken */
+    cursor: pointer; /* Verandert cursor bij hover */
+    transition: background-color 0.3s, color 0.3s; /* Animatie-effect bij hover */
+}
+
+.button:hover {
+    background-color: #000; /* Zwarte achtergrondkleur bij hover */
+    color: #fff; /* Witte tekstkleur bij hover */
+}
+
+.navbar {
+    background: #013a63; /* Donker zeeblauw */
+    color: #fff; /* Witte tekstkleur */
+    display: flex; /* Flexbox voor uitlijning */
+    justify-content: center; /* Centreert inhoud */
+    padding: 1rem 0; /* Binnenruimte boven en onder */
+    gap: 1rem; /* Ruimte tussen knoppen */
+}
+
+.navbar button {
+    background: #f4d35e; /* Donker goud */
+    color: #000; /* Zwarte tekstkleur */
+    font-weight: bold; /* Vetgedrukte tekst */
+    border: none; /* Geen rand */
+    border-radius: 8px; /* Afgeronde hoeken */
+    padding: 0.5rem 1rem; /* Binnenruimte */
+    cursor: pointer; /* Verandert cursor bij hover */
+}
+
+.navbar button:hover {
+    background: #a6824d; /* Licht bruin bij hover */
+    color: #fff; /* Witte tekstkleur bij hover */
+}
+
+.submenu {
+    display: none; /* Verbergt submenu standaard */
+    background-color: #82cdb9; /* Appelblauwzeegroen */
+    border-radius: 8px; /* Afgeronde hoeken */
+    margin-top: 1rem; /* Ruimte boven submenu */
+    padding: 1rem; /* Binnenruimte in submenu */
+}
+
+.submenu button {
+    background: #fff; /* Witte achtergrondkleur */
+    color: #000; /* Zwarte tekstkleur */
+    font-size: 1rem; /* Lettergrootte */
+    margin-top: 0.5rem; /* Ruimte boven knoppen */
+    border: none; /* Geen rand */
+    border-radius: 8px; /* Afgeronde hoeken */
+    padding: 0.5rem 1rem; /* Binnenruimte */
+    cursor: pointer; /* Verandert cursor bij hover */
+}
+
+.submenu button:hover {
+    background: #013a63; /* Donker zeeblauw bij hover */
+    color: #fff; /* Witte tekstkleur bij hover */
+}
+
+footer {
+    margin-top: 2rem; /* Ruimte boven de footer */
+    text-align: center; /* Centreert tekst */
+    padding: 1rem; /* Binnenruimte */
+    background-color: #013a63; /* Donker zeeblauw */
+    color: #fff; /* Witte tekstkleur */
+}
