@@ -1,0 +1,275 @@
+/* variabelen */
+:root {
+    --main-background: #000;
+    --main-text: #fff;
+    --button-background: #f4d35e;
+    --button-hover: #a6824d;
+    --section-background: #111;
+    --section-text: #ccc;
+    --faded-background: rgba(0, 0, 0, 0.5);
+}
+
+/* basis stijlen */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--faded-background);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    color: var(--main-text);
+}
+
+/* home sectie */
+.home {
+    background-image: url("afbeeldingen/pic10.png");
+    background-size: cover;
+    position: relative;
+}
+
+.home-header {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 0.5rem 1rem;
+    background: var(--faded-background);
+}
+
+.home-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.home-body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.home-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--faded-background);
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.home-body p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+/* knoppen*/
+.btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--main-background);
+    background-color: var(--button-background);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--button-hover);
+    color: var(--main-text);
+    outline: 2px solid var(--button-hover);
+    outline-offset: 2px;
+}
+
+/* navigatei */
+nav {
+    max-width: 100%;
+    text-align: center;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 75%;
+}
+
+.nav li {
+    position: relative;
+    margin: 0 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+}
+
+.nav li:hover {
+    background-color: var(--button-hover);
+    transition: background-color 0.5s;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: var(--faded-background);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 10;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.nav li ul li:hover {
+    background-color: var(--section-background);
+}
+
+/* diensten sectie */
+.services {
+    background-image: url('afbeeldingen/pic13.png');
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.header-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--section-background);
+    margin: 4em 0;
+}
+
+.header-section h2 {
+    font-size: 2.5rem;
+    color: var(--button-background);
+    margin-bottom: 1rem;
+}
+
+.header-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: var(--section-text);
+}
+
+.services-content {
+    background: var(--faded-background);
+    padding: 2rem 1rem;
+}
+
+/* footer */
+footer {
+    margin-top: 3em;
+    padding: 2rem 1rem;
+    background-color: var(--main-background);
+    color: var(--main-text);
+    text-align: center;
+}
+
+/* rsponsive design */
+@media screen and (max-width: 768px) {
+    .home-header h1 {
+        font-size: 2rem;
+    }
+
+    .home-body p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .nav li {
+        margin: 5px 0;
+    }
+
+    .nav li ul {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-section {
+        margin: 2em 0;
+        padding: 1rem;
+    }
+
+    .header-section h2 {
+        font-size: 2rem;
+    }
+
+    .header-section p {
+        font-size: 1rem;
+    }
+
+    .nav li {
+        padding: 8px;
+        margin: 0;
+    }
+}
+
+/* toegankelijkheid */
+a:focus,
+button:focus {
+    outline: 2px solid var(--button-hover);
+    outline-offset: 3px;
+}
+
+/* voor oudere browsers*/
+/* Voor browsers die css variabelen niet ondersteunen */
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
