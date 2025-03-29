@@ -1,0 +1,367 @@
+:root {
+    --main-background: #000;
+    --main-text: #fff;
+    --button-background: #f4d35e;
+    --button-hover: #35ba0d;
+    --section-background: #111;
+    --section-text: #ccc;
+    --foldnav-background: #e8d92e;
+    --faded-background: rgba(0, 0, 0, 0.5);
+    /*verdonkering pagina 1.0 */
+}
+
+body {
+    margin: 0;
+    /*Donkere achtergrond over hele pagina*/
+    font-family: 'Arial', sans-serif;
+    background-color: var(--main-background);
+    color: var(--main-text);
+}
+
+.home {
+    /*background: url("afbeeldingen/tekening speelplein intro.jpg") no-repeat center center/cover;*/
+    /*background: url("afbeeldingen/tekening for nina's site.jpg") no-repeat center center/cover;*/
+    background: url("afbeeldingen/tekening nina site.png") no-repeat center center/cover;
+    /*background-size: cover;*/
+}
+
+.home-header {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 2rem 1rem;
+    background: var(--faded-background);
+}
+
+.home-header h1 {
+    /* Correctie: h1 mag niet direct in .home-header als nested CSS zonder preprocessor */
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    color: var(--main-text);
+}
+
+.home-body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.home-body p {
+    /* Correctie: ongeldige { } blok zonder selector verwijderd */
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.home-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--faded-background);
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--main-background);
+    /*Knop meer over ons text*/
+    background-color: var(--button-background);
+    /*Knop meer over ons achtergrond*/
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--button-hover);
+    color: var(--main-text);
+}
+
+.services {
+    /*background: url("afbeeldingen/playground2.png") no-repeat center center/cover;*/
+    /*background: url("afbeeldingen/tekening nina site.png") no-repeat center center/cover;*/
+    /*background: url("afbeeldingen/tekening3_speeltuin.png") no-repeat center center/cover;*/
+    /*background: url("afbeeldingen/tekening2 speeltuin.png") no-repeat center center/cover;*/
+    /*background: url("afbeeldingen/tekening nina site_crop1.png") no-repeat center center/cover;*/
+    /*background: url("afbeeldingen/tekening nina site_crop2.png") no-repeat center center/cover;*/
+    /*background: url("afbeeldingen/tekening nina site_crop3.png") no-repeat center center/cover;*/
+    background: url("afbeeldingen/tekening nina site_crop4.png") no-repeat center center/cover;
+
+    /*background-size: cover;*/
+}
+
+.services>section:not(:last-child) {
+    margin-top: 2em;
+}
+
+nav {
+    max-width: 100%;
+    text-align: center;
+}
+
+ul.nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 75%;
+}
+
+ul.nav li {
+    position: relative;
+    margin: 0 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--button-background);
+    color: var(--main-background);
+}
+
+ul.nav li:hover {
+    background-color: var(--button-hover);
+    transition: 0.5s;
+}
+
+ul.nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: var(--faded-background);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 120%;
+    min-width: 25%;
+    max-width: 120%;
+}
+
+ul.nav li:hover>ul {
+    display: block;
+}
+
+ul.nav li ul li {
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+ul.nav li ul li:hover {
+    background-color: var(--button-hover);
+}
+
+a {
+    color: var(--main-text);
+    text-decoration: none;
+}
+
+.header-section {
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: var(--section-background);
+    margin: 4em 0;
+}
+
+.header-section h2 {
+    /* Correctie: h2 mag niet direct in .header-section zonder preprocessor */
+    font-size: 2.5rem;
+    color: var(--button-background);
+    margin-bottom: 1rem;
+}
+
+.header-section p {
+    /* Correctie: p mag niet direct in .header-section zonder preprocessor */
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: var(--section-text);
+}
+
+.services-content {
+    background: var(--faded-background);
+    padding: 10px;
+}
+
+section ul {
+    list-style-type: disc;
+}
+
+.staticfoldmenu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    color: var(--main-background);
+}
+
+.staticfoldmenu nav {
+    cursor: pointer;
+    background-color: var(--foldnav-background);
+    padding: 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.staticfoldmenu nav:hover {
+    background-color: var(--button-hover);
+}
+
+.staticfoldmenu ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 250px;
+    background-color: var(--faded-background);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 253, 81);
+    transition: all 0.3s ease;
+}
+
+.staticfoldmenu ul li {
+    padding: 8px;
+    text-align: center;
+}
+
+.staticfoldmenu ul li:hover {
+    background-color: var(--section-background);
+}
+
+.staticfoldmenu ul a {
+    color: var(--main-text);
+    text-decoration: none;
+}
+
+.staticfoldmenu.open ul {
+    display: block;
+}
+
+.foldmenu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.foldmenu nav {
+    cursor: pointer;
+    background-color: var(--foldnav-background);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.foldmenu nav:hover {
+    background-color: var(--button-hover);
+}
+
+.foldmenu ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--faded-background);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 253, 81);
+    transition: all 0.3s ease;
+}
+
+.foldmenu ul li {
+    padding: 8px;
+    text-align: center;
+}
+
+.foldmenu ul li:hover {
+    background-color: var(--section-background);
+}
+
+.foldmenu ul a {
+    color: var(--main-text);
+    text-decoration: none;
+}
+
+.foldmenu.open ul {
+    display: block;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('afbeeldingen/SpeelzekerLogo2Crop.jpg');
+    background-size: cover;
+}
+
+/* .menuicon {
+    width: 75px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--button-background);
+} */
+
+footer {
+    padding: 2rem 1rem;
+    background-color: var(--main-background);
+    color: var(--main-text);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .home-body h1 {
+        font-size: 2rem;
+    }
+
+    .home-body p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    ul.nav {
+        max-width: 100%;
+    }
+
+    ul.nav li ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /*test*/
+}
