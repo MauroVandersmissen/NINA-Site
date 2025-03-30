@@ -76,6 +76,13 @@ body {
     padding: 0 1rem;
 }
 
+.home-buttons {
+    display: flex;
+    padding: 30px 10px 10px 10px;
+    width: 100%;
+    gap: 60px;
+}
+
 .btn {
     display: inline-block;
     margin-bottom: 20px;
@@ -267,8 +274,8 @@ section ul {
 
 .foldmenu {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 0px;
+    right: 40px;
     z-index: 1000;
 }
 
@@ -315,6 +322,8 @@ section ul {
 
 .foldmenu.open ul {
     display: block;
+    width: 200px;
+    margin-top: 30px;
 }
 
 .icon {
@@ -331,6 +340,137 @@ section ul {
     border-radius: 10px;
     background-color: var(--button-background);
 } */
+
+.contact-body {
+    background-color: var(--section-background);
+    color: var(--main-text);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-body header {
+    display: block;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    align-items: center;
+}
+
+.afspraak {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+.afspraak p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+.info p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.bericht {
+    display: flex;
+    flex-direction: column;
+}
+
+.bericht textarea {
+    width: 500px;
+    height: 150px;
+    resize: none;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.bereik {
+    display: flex;
+    flex-direction: row;
+}
+
+.bereik p {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bereik input[type="radio"] {
+    display: none;
+}
+
+.bereik label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    color: var(--main-background);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.bereik input[type="radio"]:checked+label {
+    background-color: var(--button-hover);
+    color: var(--main-background);
+}
+
+.bereik label:hover {
+    background-color: var(--button-hover);
+}
+
+.bereik input[type="radio"]:checked+label:hover {
+    background-color: var(--button-hover);
+}
+
+#submit {
+    background-color: var(--button-background);
+    height: 30px;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: var(--button-hover);
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    width: 50%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+    text-align: right;
+}
 
 footer {
     padding: 2rem 1rem;
