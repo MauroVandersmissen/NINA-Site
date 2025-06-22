@@ -1,0 +1,672 @@
+:root {
+
+    *{/* om te integreren met alle browsers*/
+        /*margin: 0;
+        /*padding: 0;*/
+        box-sizing: border-box;
+    }
+
+    --main-background: #020000;
+    --main-text: #c0dd07;
+    --button-background: #d6c922;
+    --button-hover: #ac7701;
+    --section-background: rgb(202, 201, 201);
+    --contact-background: rgb(74, 65, 65);
+    --section-text: #cac9c9;
+    --foldnav-background: #d6c922;
+    --faded-background: rgb(101, 65, 1);
+    --contact-text: #1e1e1e;
+    --contact-box: #0505ba;
+    --contact-highlight: #c0DD07;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--main-background);
+    color: var(--main-text);
+}
+
+.gezamenlijke-text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.2em;
+    color: rgb(2, 0, 0);
+    line-height: 1.7;
+    padding: 15px;
+    border-left: 4px solid rgba(0, 0, 0, 0.86);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.home {
+    background: url("afbeeldingen/Beginpagina foto_upscaler(8×).png") no-repeat center center/cover;
+}
+
+.home-header {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 2rem 1rem;
+}
+
+.home-header h1 {
+    font-family: 'DejaVu Serif', serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    color: var(--main-text);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.home-body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.home-body p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.home-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.home-buttons {
+    display: flex;
+    padding: 30px 10px 10px 10px;
+    width: 100%;
+    gap: 60px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--main-background);
+    background-color: var(--button-background);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: var(--button-hover);
+    color: var(--main-text);
+}
+
+.services {
+    background: url("afbeeldingen/lachend meisje op glijbaan.jpg") /*no-repeat center center/cover;*/
+}
+
+footer {
+    color: var(--main-text);
+    background-color: var(--faded-background);
+    padding: 10px;
+    text-align: center;
+}
+
+.services>section:not(:last-child) {
+    margin-top: 2em;
+}
+
+nav {
+    max-width: 100%;
+    text-align: center;
+}
+
+ul.nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 75%;
+}
+
+ul.nav li {
+    position: relative;
+    margin: 0 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--button-background);
+    color: var(--main-background);
+}
+
+ul.nav li:hover {
+    background-color: var(--button-hover);
+    transition: 0.5s;
+}
+
+ul.nav a {
+    font-weight: bold;
+    font-style: normal;
+    color: var(--main-background);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul.nav li:hover a {
+    color: var(--main-text);
+}
+
+ul.nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: var(--faded-background);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+    width: 120%;
+    min-width: 25%;
+    max-width: 120%;
+}
+
+ul.nav li:hover>ul {
+    display: block;
+}
+
+ul.nav li ul li {
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+ul.nav li ul li:hover {
+    background-color: var(--button-hover);
+}
+
+a {
+    color: var(--main-text);
+    text-decoration: none;
+}
+
+.header-section {
+    padding: 1rem 1rem;
+    text-align: center;
+    margin: 4em 0;
+}
+
+.header-section h2 {
+    font-size: 2.5rem;
+    color: var(--button-background);
+    margin-bottom: 1rem;
+}
+
+.header-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: var(--section-text);
+}
+
+.services-content {
+    padding: 10px;
+    background-color: var(--section-background);
+}
+
+section ul {
+    list-style-type: disc;
+}
+
+.foldmenu {
+    position: fixed;
+    top: 1px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.foldmenu nav {
+    cursor: pointer;
+    background-color: var(--foldnav-background);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.foldmenu nav:hover {
+    background-color: var(--button-hover);
+}
+
+.foldmenu ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--faded-background);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(172, 119, 1);
+    transition: all 0.3s ease;
+}
+
+.foldmenu ul li {
+    padding: 8px;
+    text-align: center;
+}
+
+.foldmenu ul li:hover {
+    background-color: var(--section-background);
+}
+
+.foldmenu ul a {
+    color: var(--main-text);
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.foldmenu ul a:hover {
+    color: var(--main-background);
+    background-color: var(--button-hover);
+}
+
+.foldmenu.open ul {
+    display: block;
+    width: 200px;
+    margin-top: 30px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('afbeeldingen/SpeelzekerLogo2Crop.jpg');
+    background-size: cover;
+}
+.contact-header h1 strong b {
+    color: white;
+}
+
+.contact-body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--contact-background);
+    color: var(--main-text);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.footer-info {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    color: rgb(202, 201, 201);
+    line-height: 1.7;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-body h1 {
+    font-size: 2.0em;
+    color: #dad9d9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.contact-tekst {
+    font-style: italic;
+    text-align: left;
+    font-size: 1.1em;
+    width: max-content;
+    line-height: 1.8;
+    margin: 0 auto;
+    padding: 0;
+    white-space: normal;
+}
+.no-italic {
+    font-style: normal;
+    font-weight: 300;
+}
+.speelzeker-font{
+    font-family: 'DejaVu Serif', serif;
+    color: #c0DD07;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+/*.highlight-speelzeker {
+    color: #C0DD07;
+    font-weight: bold;
+}*/
+
+
+.contact-body p {
+    font-size: 1.2em;
+    color: #ac7701;
+    line-height: 1.6;
+}
+
+.contact-body header {
+    display: block;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.afspraak {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+.afspraak p {
+    color: #cac9c9;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+.info p {
+    color: #cac9c9;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.bericht {
+    display: flex;
+    flex-direction: column;
+}
+
+.bericht textarea {
+    width: 500px;
+    height: 150px;
+    resize: none;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.bereik {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.bereik p {
+    margin: 0;
+    font-weight: bold;
+    color: var(--main-text);
+}
+
+.bereik input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bereik label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    color: var(--main-background);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, ease, color 0.3s;
+    border: 2px solid transparent;
+}
+
+.bereik input[type="radio"]:checked + label {
+    background-color: var(--button-hover);
+    color: var(--main-background);
+    border-color: var(--main-text);
+}
+
+.bereik label:hover,
+.bereik input[type="radio"]:checked+label:hover {
+    background-color: var(--button-hover);
+}
+
+#submit {
+    font-weight: bold;
+    background-color: var(--button-background);
+    height: 30px;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: var(--button-hover);
+}
+
+label {
+    margin-right: 10px;
+}
+
+/*input velden iets aangepast */
+input, textarea {
+    width: 50%;
+    max-width: 500px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+    text-align: right;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 60px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.2;
+    padding-right: 4px;
+    margin-bottom: 30px;
+}
+
+.contact-footer h2 {
+    margin-bottom: 2px;
+}
+
+.contact-footer p {
+    margin: 4px 0;
+    padding: 2px 0;
+}
+
+.contact-footer p.compact {
+    margin-top: 0;
+}
+.contact-footer p.email {
+    margin-bottom: 30px;
+}
+
+.footer {
+    padding: 2rem 1rem;
+    background-color: var(--main-background);
+    color: var(--main-text);
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--main-text);
+}
+
+.footer-contact {
+    color: #cac9c9;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.footer-contact a {
+    text-decoration: underline;
+    color: #cac9c9;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*media query's voor grotes gsm en computer*/
+@media screen and (max-width: 768px) {
+    .home-body h1 {
+        font-size: 2rem;
+    }
+
+    .home-body p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    ul.nav {
+        max-width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul.nav li ul {
+        width: 100%;
+    }
+
+    /*aanpassingen voor de gsm aan foldmenu*/
+    .foldmenu {
+        top: 10px;
+        right: 10px;
+    }
+
+    .foldmenu.open ul {
+        width: 100vw;
+        right: 0;
+        margin-top: 10px;
+        border-radius: 0;
+    }
+
+    .foldmenu ul li {
+        text-align: left;
+        padding: 15px;
+    }
+
+    .foldmenu nav {
+        border-radius: 10px;
+    }
+
+    /*input velden voor gsm*/
+    input,
+    textarea,
+    .bericht textarea {
+        width: 90% !important;
+        max-width: 100%;
+    }
+
+    .afspraak {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-footer {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+.index-text h1,
+.index-text h2,
+.index-text h3,
+.index-text h4,
+.services-text h1,
+.services-text h2,
+.services-text h3,
+.services-text h4 {
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(2, 0, 0);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}

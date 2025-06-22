@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--font voor Discover now-->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>SPEELZeker</title>
+</head>
+
+<body>
+<section class="contact-body">
+    <div class="services-text gezamenlijke-text">
+    <!--<div class="contact-text"> -->
+        <!--HEADER 1 -->
+        <header class="contact-header">
+            <h1><strong><b>Neem contact op met</b></strong> <span class="speelzeker-font">SPEELZeker!</span></h1>
+            <p class="contact-tekst">
+                Fijn dat je ons gevonden hebt!<br>
+                En ons enthousiasme voor veilige, duurzame<br>en speelse omgevingen deelt.<br><br>
+                Een dringende herstelling of een spoedklus?<br>
+                Geen zorgen wij staan voor je klaar.<br>
+                Geef ons een belletje!<br><br>
+                Minder dringend, maar wel belangrijk? <br>
+                We maken met plezier tijd om af te stemmen.<br>
+                Stuur ons je vraag via het contactformulier<br>
+                hieronder of mail ons.
+            </p>
+        </header>
+        <section class="content">
+        <div class="contact-wrapper"></div><!--contact form-->
+        <form action="contact.php" method="POST">
+            <div class="afspraak">
+                <p>
+                    <input type="checkbox" name="plaatsing" id="plaatsing">
+                    <label for="plaatsing">Plaatsing</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="onderhoud" id="onderhoud">
+                    <label for="onderhoud">Onderhoud</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="ontharden" id="ontharden">
+                    <label for="ontharden">Ontharden</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="beplanting" id="beplanting">
+                    <label for="beplanting">Beplanting</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="herstelling" id="herstelling">
+                    <label for="herstelling">Herstelling</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="risicoanalyse" id="risicoanalyse">
+                    <label for="risicoanalyse">Risico-analyse</label>
+                </p>
+            </div>
+
+            <div class="info">
+                <p>
+                    <label for="naam">Naam:</label>
+                    <input type="text" name="naam" id="naam" required>
+                </p>
+                <p>
+                    <label for="functie">Functie:</label>
+                    <input type="text" name="functie" id="functie">
+                </p>
+                <p>
+                    <label for="tel">Telefoonnummer:</label>
+                    <input type="tel" name="tel" id="tel">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+            </div>
+
+            <div class="bericht">
+                <label for="bericht"><span class="highlight-speelzeker">Laat een kort berichtje achter..</span></label>
+                <textarea name="bericht" id="bericht" rows="5"></textarea>
+            </div>
+<!--HEADER 2 -->
+            <h2><span class="highlight-speelzeker"><a>Wanneer kunnen we je best bereiken?</a></span></h2>
+            <div class="bereik">
+                <p>
+                    <input type="radio" name="bereik" id="ochtend" value="Ochtend">
+                    <label for="ochtend">Ochtend</label>
+                </p>
+                <p>
+                    <input type="radio" name="bereik" id="bmid" value="Namiddag">
+                    <label for="bmid">Namiddag</label>
+                </p>
+                <p>
+                    <input type="radio" name="bereik" id="emid" value="Einde van de namiddag">
+                    <label for="emid">Einde van de namiddag</label>
+                </p>
+            </div>
+
+            <label for="submit"><span class="highlight-speelzeker"><a>Laat iets van je horen!</a></span></label>
+            <input type="submit" name="submit" id="submit" value="Verzend">
+        </form>
+        <aside style="margin-top: 300px; text-align: right; padding-right: 0; position: relative; right: -20px;">
+            <div class="contact-footer">
+                <section>
+                    <h2><span class="highlight-speelzeker">Bel ons direct</span></h2>
+                    <p class="compact">+32 494 22 32 35</p>
+                </section>
+                <section>
+                    <h2><span class="highlight-speelzeker">Of mail ons</span></h2>
+                    <p class="compact email">speelzeker@outlook.be</p>
+                </section>
+                <section>
+                    <p><strong><b><span class="highlight-speelzeker"><a>SPEELZeker</a></span></b></strong></p>
+                    <p>Leuvensestraat 121/1</p>
+                    <p>3300 Tienen</p>
+                    <p>BE0803.355.384</p>
+                    <p>IBAN: BE55 0637 6234 3344</p>
+                </section>
+            </div>
+        </aside>
+    </section>
+    </div>
+</section>
+
+<section class="foldmenu">
+    <nav>
+        <div class="icon"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html#2.1">Onze SPEELMissie</a></li>
+            <li><a href="services.html#2.2">Plaatsing en risico-analyse</a></li>
+            <li><a href="services.html#2.3">Onderhoud en Beplanting</a></li>
+            <li><a href="services.html#2.4">Herstelling en ontharding</a></li>
+        </ul>
+    </nav>
+</section>
+
+<footer>
+    <p class="footer-contact">
+        <a href="mailto:speelzeker@outlook.be">speelzeker@outlook.be</a> | +32 494 22 32 35
+    </p>
+</footer>
+</body>
+
+</html>
